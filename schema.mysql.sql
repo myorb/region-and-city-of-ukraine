@@ -1,25 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.0.6
--- http://www.phpmyadmin.net
---
--- Хост: localhost
--- Время создания: Окт 30 2013 г., 13:34
--- Версия сервера: 5.5.9
--- Версия PHP: 5.3.6
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
---
--- База данных: `c2abtt`
---
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `vd_city`
---
-
 CREATE TABLE IF NOT EXISTS `vd_city` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `db_rootid` int(11) NOT NULL DEFAULT '0',
@@ -31,10 +9,6 @@ CREATE TABLE IF NOT EXISTS `vd_city` (
   `db_deleted` enum('0','1') NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1766762 ;
-
---
--- Дамп данных таблицы `vd_city`
---
 
 INSERT INTO `vd_city` (`id`, `db_rootid`, `db_defnamelang`, `db_sortindex`, `db_timecreation`, `db_timelastedit`, `db_enabled`, `db_deleted`) VALUES
 (3832, 279, 'Бар', 0, 1374134216, 1374134216, '1', '0'),
@@ -771,11 +745,7 @@ INSERT INTO `vd_city` (`id`, `db_rootid`, `db_defnamelang`, `db_sortindex`, `db_
 (4544, 303, 'Хотин', 0, 1374134216, 1374134216, '1', '0'),
 (4545, 303, 'Черновцы', 0, 1374134216, 1374134216, '1', '0');
 
--- --------------------------------------------------------
 
---
--- Структура таблицы `vd_city_lang`
---
 
 CREATE TABLE IF NOT EXISTS `vd_city_lang` (
   `db_rid` int(10) unsigned NOT NULL,
@@ -784,9 +754,7 @@ CREATE TABLE IF NOT EXISTS `vd_city_lang` (
   PRIMARY KEY (`db_rid`,`db_lang`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Дамп данных таблицы `vd_city_lang`
---
+
 
 INSERT INTO `vd_city_lang` (`db_rid`, `db_lang`, `db_namelang`) VALUES
 (3832, 'ru', 'Бар'),
@@ -2962,12 +2930,6 @@ INSERT INTO `vd_city_lang` (`db_rid`, `db_lang`, `db_namelang`) VALUES
 (4534, 'en', 'Vyzhnytsia'),
 (4537, 'en', 'Zastavna');
 
--- --------------------------------------------------------
-
---
--- Структура таблицы `vd_region`
---
-
 CREATE TABLE IF NOT EXISTS `vd_region` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `db_rootid` int(11) NOT NULL DEFAULT '0',
@@ -2979,10 +2941,6 @@ CREATE TABLE IF NOT EXISTS `vd_region` (
   `db_deleted` enum('0','1') NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=376 ;
-
---
--- Дамп данных таблицы `vd_region`
---
 
 INSERT INTO `vd_region` (`id`, `db_rootid`, `db_defnamelang`, `db_sortindex`, `db_timecreation`, `db_timelastedit`, `db_enabled`, `db_deleted`) VALUES
 (279, 62, 'Винницкая обл.', 0, 1374134216, 1374134216, '1', '0'),
@@ -3011,22 +2969,12 @@ INSERT INTO `vd_region` (`id`, `db_rootid`, `db_defnamelang`, `db_sortindex`, `d
 (302, 62, 'Черниговская обл.', 0, 1374134216, 1374134216, '1', '0'),
 (303, 62, 'Черновицкая обл.', 0, 1374134216, 1374134216, '1', '0');
 
--- --------------------------------------------------------
-
---
--- Структура таблицы `vd_region_lang`
---
-
 CREATE TABLE IF NOT EXISTS `vd_region_lang` (
   `db_rid` int(10) unsigned NOT NULL,
   `db_lang` varchar(20) NOT NULL,
   `db_namelang` varchar(100) NOT NULL,
   PRIMARY KEY (`db_rid`,`db_lang`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `vd_region_lang`
---
 
 INSERT INTO `vd_region_lang` (`db_rid`, `db_lang`, `db_namelang`) VALUES
 (279, 'ru', 'Винницкая обл.'),
