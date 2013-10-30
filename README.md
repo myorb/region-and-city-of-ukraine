@@ -1,4 +1,4 @@
-region-and-city-of-ukraine
+База областей и городов Украины
 ==========================
 
 region and city of ukraine 
