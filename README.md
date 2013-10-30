@@ -1,4 +1,4 @@
-База областей и городов Украины
+Mysql Database regions and cities of Ukraine
 ==========================
 
-Смотрим файл schema.mysql.sql
+schema.mysql.sql
